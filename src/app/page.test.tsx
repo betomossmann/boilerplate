@@ -24,5 +24,10 @@ describe('Page', () => {
 
       expect(heading).toBeInTheDocument()
     })
+
+    it('Should have Home Page text', () => {
+      render(<Home />)
+      expect(screen.getByText('Home Page')).toBeInTheDocument()
+    })
   })
 })

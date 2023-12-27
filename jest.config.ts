@@ -9,18 +9,7 @@ const createJestConfig = nextJest({
 // Add any custom config to be passed to Jest
 const config: Config = {
   collectCoverage: true,
-  collectCoverageFrom: [
-    './src/**/*.{js,jsx,ts,tsx}',
-    '!./src/**/_*.{js,jsx,ts,tsx}',
-    '!./src/**/*.stories.{js,jsx,ts,tsx}',
-    '!**/*.d.ts',
-    '!**/node_modules/**'
-  ],
-  moduleNameMapper: {
-    '@/(.*)': '<rootDir>/src/$1'
-    // Handle module aliases (this will be automatically configured for you soon)
-  },
-  roots: ['<rootDir>/src'],
+  preset: 'ts-jest',
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   testEnvironment: 'jest-environment-jsdom'
 }
