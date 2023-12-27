@@ -17,11 +17,10 @@ const config: Config = {
     '!**/node_modules/**'
   ],
   moduleNameMapper: {
-    '@/(.*)': '<rootDir>/src/$1',
+    '@/(.*)': '<rootDir>/src/$1'
     // Handle module aliases (this will be automatically configured for you soon)
-    '@/tests/(.*)': '<rootDir>/tests/$1'
   },
-  roots: ['<rootDir>/src', '<rootDir>/tests'],
+  roots: ['<rootDir>/src'],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   testEnvironment: 'jest-environment-jsdom'
 }

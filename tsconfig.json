@@ -18,11 +18,9 @@
         "name": "next"
       }
     ],
-    "rootDirs": ["src", "tests"],
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["*"],
-      "@/tests/*": ["../tests/*"]
+      "@/*": ["*"]
     }
   },
   "include": [
