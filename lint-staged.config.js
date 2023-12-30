@@ -1,3 +1,3 @@
 module.exports = {
-  '*.{ts,tsx}': ['npm run lint:fix', 'npm run test:staged']
+  '*.{ts,tsx}': ['pnpm lint:fix', 'pnpm test']
 }
